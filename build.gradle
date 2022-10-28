@@ -12,7 +12,7 @@ buildscript {
 allprojects {
     repositories {
         maven {
-            url "http://35.92.201.109:8081/artifactory/gradle-dev/"
+            url "http://13.228.77.86:8081/artifactory/gradle-dev/"
         }
     }
 }
@@ -43,11 +43,6 @@ artifactory {
             password = "${artifactory_password}"
             maven = true
             
-        }
-        defaults {
-            publications('mavenJava')
-            publishArtifacts = true
-            publishPom = true
         }
     }
     resolve {
