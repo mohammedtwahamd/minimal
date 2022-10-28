@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        gradle 'gradle_new'
+        gradle 'Gradle_3'
     }
     
     stages {
         stage('checkout SCM') {
             steps {
-            git branch: 'main', url: "https://github.com/balavu/gradle-minimal.git"
+            git branch: 'main', url: "https://github.com/mohammedtwahamd/minimal.git"
             }
         }
 
